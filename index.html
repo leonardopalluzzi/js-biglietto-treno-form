@@ -15,7 +15,7 @@
         <div class="mb-3">
             <label for="name" class="form-label">Nome</label>
             <input type="text" class="form-control" name="name" id="name" aria-describedby="helpId"
-                placeholder="Mario Rossi" />
+                placeholder="Mario Rossi" required/>
             <small id="helpId" class="form-text text-muted">Inserire nome e cognome</small>
         </div>
         <!-- name  -->
@@ -28,6 +28,7 @@
                 id="distance"
                 aria-describedby="helpId"
                 placeholder="234 km"
+                required
             />
             <small id="helpId" class="form-text text-muted">Inseririe la distanza in km che si vuole percorrere</small>
          </div>
@@ -39,14 +40,20 @@
                 class="form-select form-select-lg"
                 name="age"
                 id="age"
+                required
             >
-                <option selected>Select one</option>
+                <option value="">Select one</option>
                 <option value="minor">Minorenne</option>
                 <option value="major">Maggiorenne</option>
                 <option value="65">Over 65 (65 incluso)</option>
             </select>
         </div>
-        <button type="submit">click me</button>
+        <button
+            type="submit"
+            class="btn btn-primary"
+        >
+            Submit
+        </button>
     </form>
 
 

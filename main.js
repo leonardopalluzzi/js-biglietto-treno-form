@@ -16,7 +16,7 @@ function priceCalc (km, age) {
     } else {
         finalPrice = basePrice
     }
-    return finalPrice;
+    return finalPrice.toFixed(2);
     
     
 }
