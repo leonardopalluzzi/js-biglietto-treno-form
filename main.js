@@ -10,8 +10,7 @@ function priceCalc (km, age) {
     if (isNaN(km) || isNaN(age)) {
         alert('per favore inserire un numero');
         location.reload();
-    }
-    if (age >= 65) {
+    } else if (age >= 65) {
         finalPrice = basePrice - ((basePrice * 40) / 100);
     } else if (age < 18) {
         finalPrice = basePrice - ((basePrice*20) / 100);
