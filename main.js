@@ -17,14 +17,8 @@ function priceCalc (km, age) {
     return finalPrice;
 }
 
-console.log(priceCalc(distanceEl, ageEl));
-
-
-console.log(distanceEl, ageEl);
-
-
 formEl.addEventListener('submit', (e) => {
     e.preventDefault();
     console.log(distanceEl, ageEl);
-    
+    console.log(priceCalc(distanceEl.value, ageEl.value));
 })
