@@ -15,46 +15,67 @@
         <div class="mb-3">
             <label for="name" class="form-label">Nome</label>
             <input type="text" class="form-control" name="name" id="name" aria-describedby="helpId"
-                placeholder="Mario Rossi" required/>
+                placeholder="Mario Rossi" required />
             <small id="helpId" class="form-text text-muted">Inserire nome e cognome</small>
         </div>
         <!-- name  -->
-         <div class="mb-3">
+        <div class="mb-3">
             <label for="distance" class="form-label">Distanza (km)</label>
-            <input
-                type="text"
-                class="form-control"
-                name="distance"
-                id="distance"
-                aria-describedby="helpId"
-                placeholder="234 km"
-                required
-            />
+            <input type="text" class="form-control" name="distance" id="distance" aria-describedby="helpId"
+                placeholder="234 km" required />
             <small id="helpId" class="form-text text-muted">Inseririe la distanza in km che si vuole percorrere</small>
-         </div>
+        </div>
         <!-- distance  -->
 
         <div class="mb-3">
             <label for="age" class="form-label">Eta</label>
-            <select
-                class="form-select form-select-lg"
-                name="age"
-                id="age"
-                required
-            >
+            <select class="form-select form-select-lg" name="age" id="age" required>
                 <option value="">Select one</option>
                 <option value="minor">Minorenne</option>
                 <option value="major">Maggiorenne</option>
                 <option value="65">Over 65 (65 incluso)</option>
             </select>
         </div>
-        <button
-            type="submit"
-            class="btn btn-primary"
-        >
+        <button type="submit" class="btn btn-primary">
             Submit
         </button>
     </form>
+
+    <div class="container">
+        <h1>il tuo biglietto</h1>
+        <div class="ticket">
+            <div class="row">
+                <div class="col-4 user bg-dark text-light">
+                    <h2>nome e cognome</h2>
+                    <p>Eta</p>
+                </div>
+                <div class="col-8 details">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Offerta</th>
+                                <th>Carrozza</th>
+                                <th>Codice CP</th>
+                                <th>Costo Biglietto</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
 
