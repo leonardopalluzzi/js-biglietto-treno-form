@@ -7,6 +7,10 @@ const ageEl = document.getElementById('age');
 function priceCalc (km, age) {
     const basePrice = km * 0.21;
     let finalPrice;
+    if (isNaN(km) || isNaN(age)) {
+        alert('per favore inserire un numero');
+        location.reload();
+    }
     if (age >= 65) {
         finalPrice = basePrice - ((basePrice * 40) / 100);
     } else if (age < 18) {
