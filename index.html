@@ -12,8 +12,40 @@
 
 <body>
     <form class="ticket-form" action="">
-        <input id="distance" type="text" placeholder="numero km">
-        <input id="age" type="text" placeholder="eta">
+        <div class="mb-3">
+            <label for="name" class="form-label">Nome</label>
+            <input type="text" class="form-control" name="name" id="name" aria-describedby="helpId"
+                placeholder="Mario Rossi" />
+            <small id="helpId" class="form-text text-muted">Inserire nome e cognome</small>
+        </div>
+        <!-- name  -->
+         <div class="mb-3">
+            <label for="distance" class="form-label">Distanza (km)</label>
+            <input
+                type="text"
+                class="form-control"
+                name="distance"
+                id="distance"
+                aria-describedby="helpId"
+                placeholder="234 km"
+            />
+            <small id="helpId" class="form-text text-muted">Inseririe la distanza in km che si vuole percorrere</small>
+         </div>
+        <!-- distance  -->
+
+        <div class="mb-3">
+            <label for="age" class="form-label">Eta</label>
+            <select
+                class="form-select form-select-lg"
+                name="age"
+                id="age"
+            >
+                <option selected>Select one</option>
+                <option value="minor">Minorenne</option>
+                <option value="major">Maggiorenne</option>
+                <option value="65">Over 65 (65 incluso)</option>
+            </select>
+        </div>
         <button type="submit">click me</button>
     </form>
 
