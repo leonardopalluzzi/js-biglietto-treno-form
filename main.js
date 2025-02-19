@@ -18,7 +18,7 @@ function priceCalc (km, age) {
     const basePrice = km * 0.21;
     let finalPrice;
     if (isNaN(km)) {
-        alert('per favore inserire un numero');
+        alert('per favore inserire un numero di km');
         location.reload();
     } else if (age == '65') {
         finalPrice = basePrice - ((basePrice * 40) / 100);
@@ -39,7 +39,7 @@ function ticketGenerator () {
     outOffer.innerHTML = offers[i];
     outTrain.innerHTML = Math.floor(Math.random() * 12);
     outCode.innerHTML = Math.floor(Math.random() * 100000);
-    outPrice.innerHTML = priceCalc(distanceEl.value, ageEl.value);
+    outPrice.innerHTML = `${priceCalc(distanceEl.value, ageEl.value)} <span>&euro;</span>`;
     
 
 }
@@ -49,5 +49,4 @@ formEl.addEventListener('submit', (e) => {
     console.log(distanceEl, ageEl);
     console.log(priceCalc(distanceEl.value, ageEl.value));
     console.log(ticketGenerator());
-    
 });
