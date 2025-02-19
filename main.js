@@ -21,4 +21,4 @@ formEl.addEventListener('submit', (e) => {
     e.preventDefault();
     console.log(distanceEl, ageEl);
     console.log(priceCalc(distanceEl.value, ageEl.value));
-})
+});
